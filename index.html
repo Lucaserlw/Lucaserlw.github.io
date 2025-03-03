@@ -2,10 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo-DUWUmsh9.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/assets/index-D0Kp-SMA.js"></script>
+    <title>你好世界 | Hello World</title>
+    <script>
+      // 多国语言的"你好世界"
+      const greetings = [
+        "你好世界 | Hello World", // 中文 & 英文
+        "こんにちは世界 | Hello World", // 日文
+        "안녕하세요 세계 | Hello World", // 韩文
+        "Bonjour le monde | Hello World", // 法文
+        "Hola Mundo | Hello World", // 西班牙文
+        "Ciao Mondo | Hello World", // 意大利文
+        "Hallo Welt | Hello World", // 德文
+        "Olá Mundo | Hello World", // 葡萄牙文
+        "Привет мир | Hello World", // 俄文
+        "مرحبا بالعالم | Hello World", // 阿拉伯文
+      ];
+      
+      let currentIndex = 0;
+      
+      // 每3秒切换一次标题
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % greetings.length;
+        document.title = greetings[currentIndex];
+      }, 3000);
+    </script>
+    <script type="module" crossorigin src="/assets/index-lzml5gCZ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CRhNSKbg.css">
   </head>
   <body>
