@@ -1,0 +1,34 @@
+<svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C5282;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299E1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad2)"/>
+  
+  <!-- 建筑场景 -->
+  <g fill="#ffffff" opacity="0.15">
+    <!-- 城市背景 -->
+    <rect x="50" y="150" width="100" height="350" rx="2"/>
+    <rect x="200" y="200" width="80" height="300" rx="2"/>
+    <rect x="320" y="180" width="120" height="320" rx="2"/>
+    
+    <!-- 施工场景 -->
+    <rect x="500" y="300" width="400" height="200" rx="0"/> <!-- 地基 -->
+    <rect x="550" y="150" width="300" height="150" rx="0"/> <!-- 主体结构 -->
+    <polygon points="550,150 700,50 850,150" /> <!-- 屋顶 -->
+    
+    <!-- 施工设备 -->
+    <rect x="900" y="100" width="20" height="400" rx="0"/> <!-- 塔吊柱 -->
+    <rect x="880" y="100" width="150" height="20" rx="0"/> <!-- 塔吊臂 -->
+    <line x1="1000" y1="120" x2="1000" y2="350" stroke="#ffffff" stroke-width="2"/> <!-- 吊绳 -->
+    
+    <!-- 工人 -->
+    <circle cx="600" cy="350" r="15"/> <!-- 工人1 -->
+    <circle cx="700" cy="400" r="15"/> <!-- 工人2 -->
+    <circle cx="800" cy="380" r="15"/> <!-- 工人3 -->
+  </g>
+  
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="white">保障性住房建设</text>
+</svg> 
